@@ -60,7 +60,7 @@ python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/uvicorn src.app:app --port 8000
 ```
 
-Docker: `docker build -t support-intent-lora .` (run this after training, because the image copies `artifacts/`).
+Docker: `docker build -t support-intent-lora . && docker run -p 8000:8000 support-intent-lora` (run this after training, because the image copies `artifacts/`). Verified: the 1.9 GB CPU image serves `/predict`.
 
 ## Layout
 

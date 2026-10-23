@@ -12,7 +12,6 @@ import torch
 from peft import AutoPeftModelForSequenceClassification
 from transformers import AutoTokenizer
 
-from src.data import load_banking77
 
 
 def set_quant_engine():
@@ -53,6 +52,8 @@ def latency_ms(model, tok, texts, batch, runs=20):
 
 
 def main(adapter="artifacts/lora"):
+    from src.data import load_banking77  # training-only dependency; the API image skips `datasets`
+
     torch.set_num_threads(4)
     tok = AutoTokenizer.from_pretrained(adapter)
     num_labels = len(json.loads(Path(adapter, "labels.json").read_text()))
