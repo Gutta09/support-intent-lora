@@ -1,0 +1,8 @@
+{
+  "test_accuracy": 0.9116883116883117,
+  "trainable_params": 1239629,
+  "total_params": 68252314,
+  "epochs": 3.0,
+  "train_minutes": 3.5,
+  "train_examples": 10003
+}

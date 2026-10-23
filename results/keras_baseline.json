@@ -1,0 +1,6 @@
+{
+  "test_accuracy": 0.8834,
+  "train_minutes": 0.1,
+  "tensorflow": "2.21.0",
+  "keras": "3.15.1"
+}

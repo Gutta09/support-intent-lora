@@ -1,0 +1,14 @@
+{
+  "fp32": {
+    "accuracy": 0.9117,
+    "size_mb": 268.1,
+    "latency_ms_batch1": 7.01,
+    "latency_ms_batch32": 55.14
+  },
+  "int8": {
+    "accuracy": 0.9075,
+    "size_mb": 138.8,
+    "latency_ms_batch1": 5.38,
+    "latency_ms_batch32": 196.66
+  }
+}
